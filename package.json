@@ -1,5 +1,6 @@
 {
   "name": "keep-app",
+  "homepage": "https://davidpd2690.github.io/keep-app",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
@@ -13,9 +14,12 @@
     "uuid": "3.3.3"
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "typescript": "3.3.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
